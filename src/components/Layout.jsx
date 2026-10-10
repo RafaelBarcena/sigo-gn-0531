@@ -4,7 +4,7 @@ function Layout() {
   return (
     <div className="layout">
       <header className="layout-header">
-        <h1>SIGO-GN</h1>
+        <h1>SIGO-GN · Unidad 31</h1>
         <nav className="layout-nav">
           <Link to="/">Inicio</Link>
           <Link to="/dashboard">Dashboard</Link>
