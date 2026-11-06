@@ -130,3 +130,107 @@ button:hover {
     padding: 1.2rem;
   }
 }
+
+/* ===== Módulo de expedientes (Práctica 3) ===== */
+.tarjeta-ancha {
+  max-width: 1100px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.6rem;
+  border: 1px solid #b8c0cc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.formulario input:disabled {
+  background: #eef0f4;
+  color: #5b6475;
+}
+
+.formulario-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-titulo {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.campo-ancho {
+  grid-column: 1 / -1;
+}
+
+.formulario-botones {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.btn-secundario {
+  background: #6b7686;
+}
+
+.btn-secundario:hover {
+  background: #566071;
+}
+
+.btn-peligro {
+  background: #b3261e;
+}
+
+.btn-peligro:hover {
+  background: #8f1d17;
+}
+
+.tabla-contenedor {
+  overflow-x: auto;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+  padding: 0.6rem 0.7rem;
+  border-bottom: 1px solid #dde2ea;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla th {
+  background: #1f3a5f;
+  color: white;
+  white-space: nowrap;
+}
+
+.tabla tbody tr:hover {
+  background: #f2f6fb;
+}
+
+.tabla-vacia {
+  text-align: center !important;
+  color: #5b6475;
+}
+
+.tabla-acciones {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tabla-acciones button {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .formulario-grid {
+    grid-template-columns: 1fr;
+  }
+}

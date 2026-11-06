@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -13,6 +13,9 @@ function Dashboard() {
     <div className="tarjeta">
       <h2>Bienvenido, {usuario?.nombre}</h2>
       <p>Rol: {usuario?.rol}</p>
+      <p>
+        <Link to="/expedientes">Ir al módulo de Expedientes →</Link>
+      </p>
       <button onClick={cerrarSesion}>Cerrar sesión</button>
     </div>
   );

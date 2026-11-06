@@ -8,6 +8,7 @@ function Layout() {
         <nav className="layout-nav">
           <Link to="/">Inicio</Link>
           <Link to="/dashboard">Dashboard</Link>
+          <Link to="/expedientes">Expedientes</Link>
         </nav>
       </header>
 
